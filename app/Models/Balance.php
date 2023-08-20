@@ -41,9 +41,4 @@ class Balance extends BaseModel
     {
         return self::where('user_id', $userId)->lockForUpdate()->firstOrFail();
     }
-
-    public static function existsAccount(?int $userId): bool
-    {
-        return self::where('user_id', $userId)->exists();
-    }
 }
