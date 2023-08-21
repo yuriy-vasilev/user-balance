@@ -4,7 +4,12 @@
 * Redis (for queue)
 * any database: mysql, pgsql, sqlite
 
-## Instruction
+## Instruction deploy
+
+use docker
+[docker-compose-laravel](https://github.com/aschmelyun/docker-compose-laravel)
+
+or local
 
 ```
 composer install
@@ -12,10 +17,6 @@ copy .env.example .env
 php artisan key:generate
 php artisan migrate
 ```
-
-## Run tests
-
-``.vendor/bin/phpunit``
 
 ## Run workers (jobs)
 
